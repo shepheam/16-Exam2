@@ -263,7 +263,7 @@ def problem4b(list_of_tuples_of_strings):
         if is_prime(len(list_of_tuples_of_strings[k])) is True:
             return True
 
-    
+
 
 
 
