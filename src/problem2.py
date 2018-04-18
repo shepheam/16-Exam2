@@ -159,7 +159,7 @@ def problem2(n, seq):
     # -------------------------------------------------------------------------
     list = []
     total = []
-    for k in range(len(seq)): 
+    for k in range(len(seq)):  
         if seq[k] < n:
             total = total + [seq[k]]
         if len(total) >= 3:
