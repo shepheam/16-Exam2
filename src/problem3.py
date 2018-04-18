@@ -2,8 +2,8 @@
 Exam 2, problem 3.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  April 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Ashley Shepherd.  April 2018.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 ###############################################################################
@@ -28,7 +28,8 @@ def main():
 
     # Test get_age:
     p1 = Person(9)
-    print(p1.get_age())  # Should print 9
+    print(p1.celebrate_birthdays())  # Should print 9
+
 
     # -------------------------------------------------------------------------
     # WRITE MORE CODE HERE AS NEEDED to TEST the code that you write
@@ -38,24 +39,30 @@ def main():
     # -------------------------------------------------------------------------
 
 
+
 class Person(object):
     def __init__(self, age):
         """
         What comes in:  The Person's age.
         Side effects: Sets instance variables as needed by the other methods.
         """
-        # TODO: Implement and test this method.
-
+        # DONE: Implement and test this method.
+        self.age = age
     def get_age(self):
         """ Returns this Person's age. """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+        age = self.age
+        return age
 
     def celebrate_birthday(self):
         """
         Increments this Person's age.
         ALso prints 'Happy birthday!'.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+
+        age = self.get_age
+        print('Happy birthday!')
 
     def celebrate_birthdays(self, n):
         """
@@ -64,12 +71,19 @@ class Person(object):
         """
         # TODO: Implement and test this method.
 
+        birthdays = self.celebrate_birthday()
+        print('birthdays' * 5)
+
+
     def older_person(self):
         """
         Returns a new Person whose age is twice this Person's age.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
 
+        double_age = (self.age * 2)
+        ashley = Person(double_age)
+        return ashley
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.

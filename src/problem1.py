@@ -75,12 +75,14 @@ def problem1(rectangles):
     # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     # -------------------------------------------------------------------------
-    total = 0
 
+    total = 0
     for k in range(len(rectangles)):
-        mult = (rectangles[k][0] * rectangles[k][1])
+        mult = rectangles[k].Rect.x * rectangles[k].Rect.y
         total = total + mult
     return total
+
+
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
